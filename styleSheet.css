@@ -6,8 +6,10 @@
 #weeklyDeals{
     text-align: center;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: serif;
+
 }
+
 
 ul {
     list-style-type: none;
@@ -19,7 +21,7 @@ ul {
 
 li {
     float: left;
-    border-right:1px solid #bbb;
+    border-right:1px solid black;
 }
 
 li:last-child {
@@ -35,11 +37,21 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #5cb85c;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .active {
-    background-color: orangered;
+    background-color: #5cb85c;
+    color: #000000;
+
+
+}
+.active:hover{
+    text-decoration: none;
+    background-color: #5cb85c;
+    color: #ffffff;
 }
 #bg{
 

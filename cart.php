@@ -17,11 +17,11 @@
     <li><a href="#news">News</a></li>
     <li><a href="#contact">Contact</a></li>
     <ul style="float:right;list-style-type:none;">
-        <li><a href="#about">About</a></li>
-        <li><a href="cart.php"><img src="http://www.graphicsbeam.com/wp-content/uploads/2012/04/Shopping-Cart-Icon-with-PSD-and-PNG-Format.png" style="height: 30px;width: 40px;"></a></li>
+        <li><a href="signin.php">Sign in</a></li>
+        <li><a href="cart.php"><img src="http://www.graphicsbeam.com/wp-content/uploads/2012/04/Shopping-Cart-Icon-with-PSD-and-PNG-Format.png" style="height: 13px;width: 20px;"></a></li>
     </ul>
 </ul>
-<table>
+<table id="tablef">
     <tr>
         <td><img src="http://techwelike.com/wp-content/uploads/2014/03/TCL-48-inch-1080P-LED-HDTV-Sams-Club-TechWeLike-Cruz-2.png" style="height: 100px;width: 150px;"><p name="item1">48 inch 1080P</p><button id="prod1" onclick="enter()">Add to cart?</button></td>
         <td><img src="http://pngimg.com/upload/computer_pc_PNG7713.png" style=" height: 100px;width: 150px;"><p>hp desktop</p></td>
