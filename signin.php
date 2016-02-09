@@ -8,10 +8,21 @@ $row = mysql_fetch_array($result) or die(mysql_error());
 echo "firstname: ".$row['firstname'];
 echo "username: ".$row['username'];
 //echo "Connected to Database";
+
 ?>
+<form action="signin.php" method="post">
+    Which is your favorite movie?
+    <input type="text" name="formMovie" maxlength="50" value="<?php global $varUn; echo $varUn;?>">
+
+    What is your name?
+    <input type="text" name="formName" maxlength="50" value="<?php global $varpass; echo $varpass;?>">
+
+    <input type="submit" name="formSubmit" value="Submit">
+</form>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" type="text/css" href="styleSheet.css">
     <meta charset="UTF-8">
     <title>Buy stuff</title>
@@ -41,6 +52,8 @@ echo "username: ".$row['username'];
     <input type="text">
     <br>
     <button type="submit">Sign in</button>
+    <br>
+    <a href="makeaccount.php" id="nyam">Don't have account?</a>
 
 </div>
 

@@ -1,7 +1,5 @@
 <?php
 ?>
-<?php
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +19,7 @@
     <li><a href="#news">News</a></li>
     <li><a href="#contact">Contact</a></li>
     <ul style="float:right;list-style-type:none;">
-        <li><a href="#about">About</a></li>
+        <li><a href="signin.php">Sign in</a></li>
         <li><a href="cart.php"><img src="http://www.graphicsbeam.com/wp-content/uploads/2012/04/Shopping-Cart-Icon-with-PSD-and-PNG-Format.png" style="height: 13px;width: 23px;"></a></li>
     </ul>
 </ul>
@@ -29,8 +27,9 @@
 <div id="infotv">
 <table border="5">
 <tr><td><img src="http://techwelike.com/wp-content/uploads/2014/03/TCL-48-inch-1080P-LED-HDTV-Sams-Club-TechWeLike-Cruz-2.png" style="height: 450px; width: 600px;"></td>
-<td><h5>TV</h5></td>
+<td><h5>&nbsp;48 inch 1080P LED&nbsp;</h5><p>&nbsp; Was &nbsp;<del>$900</del> &nbsp;Price: $800&nbsp;</p><p></p></td>
     </tr>
     </table>
+
 </div>
 </body>
