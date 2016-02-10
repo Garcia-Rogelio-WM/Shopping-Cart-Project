@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once('Connector.php');
 $error = false;
 $success = false;
@@ -26,7 +27,9 @@ if(@$_POST['signup']){
         )
     );
     if($result) {
-        $success = "User, " . $_POST['username'] . " was successfully created";
+        $success = "firstname, " . $_POST['username'] . " was successfully created";
+        $_SESSION['registered'] = 1;
+        header("Location: signin.php");
     } else{
         $success = "There was an error creating the account!";
     }
@@ -60,7 +63,7 @@ if(@$_POST['signup']){
 </ul>
 <h2 style="text-align: center">Sign up</h2>
 <div id="signup" style="text-align: center">
-<form>
+<form method="post" name="form">
     <p>First name</p>
     <input type="text" name="firstn" required>
     <p>Last name</p>
