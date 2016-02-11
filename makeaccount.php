@@ -34,6 +34,7 @@ if(@$_POST['signup']){
         $success = "There was an error creating the account!";
     }
 }
+echo($item['firstname']);
 
 ?>
 <!DOCTYPE html>
