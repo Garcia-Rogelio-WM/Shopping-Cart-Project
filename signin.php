@@ -7,6 +7,7 @@ $result = mysql_query("SELECT * FROM Accounts")
 $row = mysql_fetch_array($result) or die(mysql_error());
 //echo "Connected to Database";
 
+
 ?>
 
 <?php
@@ -36,7 +37,9 @@ if (isset($_GET['item1'])) {
 <h1 id="storeName">Buy Stuff</h1>
 <ul>
     <li><a class="active" href="index.php">Home</a></li>
-    <li><a href="#news">News</a></li>
+    <li><a href="#news"><?php
+            echo $_SESSION['uname']
+            ?></a></li>
     <li><a href="#contact">Contact</a></li>
     <ul style="float:right;list-style-type:none;">
         <li><a href="">In Cart:<?php
@@ -59,6 +62,7 @@ if (isset($_GET['item1'])) {
     <a href="makeaccount.php" id="nyam">Don't have account?</a>
     </form>
 </div>
+
 
 
 
