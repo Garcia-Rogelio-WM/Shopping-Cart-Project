@@ -26,6 +26,7 @@ if(@$_POST['signup']){
             'password' => $_POST['pass']
         )
     );
+
     if($result) {
         $success = "firstname, " . $_POST['username'] . " was successfully created";
         $_SESSION['registered'] = 1;
@@ -34,8 +35,17 @@ if(@$_POST['signup']){
         $success = "There was an error creating the account!";
     }
 }
-echo($item['firstname']);
 
+?>
+<?php
+session_start();
+
+if (isset($_GET['item1'])) {
+    $_SESSION['checkout']++;
+    header("location: cart.php");
+
+
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,13 +68,16 @@ echo($item['firstname']);
     <li><a href="#news">News</a></li>
     <li><a href="#contact">Contact</a></li>
     <ul style="float:right;list-style-type:none;">
+        <li><a href="">In Cart:<?php
+                echo $_SESSION['checkout']
+                ?></a></li>
         <li><a href="signin.php">Sign in</a></li>
         <li><a href="cart.php"><img src="http://www.graphicsbeam.com/wp-content/uploads/2012/04/Shopping-Cart-Icon-with-PSD-and-PNG-Format.png" style="height: 13px;width: 23px;"></a></li>
     </ul>
 </ul>
 <h2 style="text-align: center">Sign up</h2>
 <div id="signup" style="text-align: center">
-<form method="post" name="form">
+<form method="post" name="signup">
     <p>First name</p>
     <input type="text" name="firstn" required>
     <p>Last name</p>
@@ -74,7 +87,7 @@ echo($item['firstname']);
     <p>password</p>
     <input type="text" name="pass" required>
     <br>
-    <button type="submit" name="signup">Sign up</button>
+    <button type="submit" name="signup" value="1">Sign up</button>
     </form>
     <br>
     <?php
