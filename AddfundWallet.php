@@ -49,11 +49,11 @@ if (isset($_GET['item1'])) {
         <option value="American Express">American Express</option>
     </select>
     <h6>Card number</h6>
-    <input type="text" maxlength="16" size="16">
+    <input type="number" min="000000000" max="9999999999">
     <h6>Expiration date</h6>
     <input type="date">
     <h6>Cvv</h6><h6>?</h6>
-    <input type="text" maxlength="3">
+    <input type="number" min="000" max="999">
 
     <p>Wallet:$<?php
         echo $_SESSION['wallet']

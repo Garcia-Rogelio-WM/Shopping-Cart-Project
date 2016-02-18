@@ -71,7 +71,7 @@ if (isset($_GET['del'])) {
 
 <body style="background-color: lightgray">
 
-<h1 id="storeName">Buy Stuff</h1>
+<h1 id="storeName"><p style="color: green">Buy<p> $tuff</p></h1>
 <ul>
     <li><a class="active" href="index.php">Home</a></li>
     <li><a href="#news"><?php
