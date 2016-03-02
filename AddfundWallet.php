@@ -11,6 +11,7 @@ if (isset($_GET['item1'])) {
 
 }
 ?>
+<script src="script.js"></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +53,11 @@ if (isset($_GET['item1'])) {
     <input type="number" min="000000000" max="9999999999">
     <h6>Expiration date</h6>
     <input type="date">
-    <h6>Cvv</h6><h6>?</h6>
+    <h6>Cvv</h6><button onclick="cvv()">?</button><table>
+       <tr>
+           <td><img src="https://s.graphiq.com/sites/default/files/2307/media/images/Light_Gray_429810_i0.png" style="height: 50px;width: 50px;" id="cvv"></td>
+       </tr>
+    </table>
     <input type="number" min="000" max="999">
 
     <p>Wallet:$<?php

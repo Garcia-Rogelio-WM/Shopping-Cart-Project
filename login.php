@@ -38,4 +38,5 @@ if(@$_POST['signup']) {
         $success = "There was an error logging into the account.";
     }
 }
+
 ?>

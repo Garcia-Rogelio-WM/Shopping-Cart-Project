@@ -64,9 +64,6 @@ if (isset($_GET['item1'])) {
 </div>
 
 
-
-
-
 </div>
 </div>
 </body>
